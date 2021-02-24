@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 public class DBUtil {
     private static final String PERSISTENCE_UNIT_NAME = "daily_report_system";  // DBを永続化させるユニット
 
-    private static EntityManagerFactory emf;
+    private static EntityManagerFactory emf;  // 初期化
 
     // EntityManagerを取得
     public static EntityManager createEntityManager() {
