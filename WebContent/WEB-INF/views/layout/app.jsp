@@ -19,7 +19,7 @@
             </div>
 
             <div id="footer">
-                by Taro Kirameki
+                by Masa Waka
             </div>
         </div>
     </body>
