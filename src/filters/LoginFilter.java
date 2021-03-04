@@ -37,8 +37,8 @@ public class LoginFilter implements Filter {
      * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
      */
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        String context_path = ((HttpServletRequest)request).getContextPath();  // ServletRequest型をHttpServletRequest型にキャスト
-        String servlet_path = ((HttpServletRequest)request).getServletPath();
+        String context_path = ((HttpServletRequest)request).getContextPath();  // ServletRequest型をHttpServletRequest型にキャスト:daily_report_system
+        String servlet_path = ((HttpServletRequest)request).getServletPath();  // loginだったりemployeesだったり
 
         if(!servlet_path.matches("/css.*")) {  // CSSフォルダ内は認証処理から除外する
             HttpSession session = ((HttpServletRequest)request).getSession();  // sessionを開始
