@@ -56,7 +56,7 @@ public class Employee {
     @Column(name = "updated_at", nullable= false)
     private Timestamp updated_at;
 
-    @Column(name = "delete_falg", nullable = false)
+    @Column(name = "delete_flag", nullable = false)
     private Integer delete_flag;
 
 
