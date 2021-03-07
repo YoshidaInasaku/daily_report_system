@@ -54,7 +54,6 @@ public class ReportsIndexServlet extends HttpServlet {
         request.setAttribute("reports_count", reports_count);
         request.setAttribute("page", page);
 
-        // 他のページからindexに来るとflushを持っていることがあるため、flushを表示するべくsessionからflushを取り出す
         if(request.getSession().getAttribute("flush") != null) {
             request.setAttribute("flush", request.getSession().getAttribute("flush"));
             request.getSession().removeAttribute("flush");

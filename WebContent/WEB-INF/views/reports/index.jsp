@@ -29,7 +29,7 @@
             </tbody>
         </table>
 
-        <div id="pagenation">
+        <div id="pagination">
             (全 ${reports_count} 件)<br />
             <c:forEach var="i" begin="1" end="${((reports_count - 1) / 15) + 1}" step="1">
                 <c:choose>
@@ -37,7 +37,7 @@
                         <c:out value="${i}" />&nbsp;
                     </c:when>
                     <c:otherwise>
-                        <a href="<c:url value='/reports/index?page=${page}' />"><c:out value="${i}" /></a>&nbsp;
+                        <a href="<c:url value='/reports/index?page=${i}' />"><c:out value="${i}" /></a>&nbsp;
                     </c:otherwise>
                 </c:choose>
             </c:forEach>
